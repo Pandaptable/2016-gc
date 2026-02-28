@@ -1,0 +1,2 @@
+this was made to upload the game in full, we split the whole .zipped game into 500 mb chunks then uploaded it to discord for a bot to check the download link every hour for the launcher to then use those links, and check for hashes
+this allowed downloads to be serverless basically :) no bandwidth used on our end

@@ -1,0 +1,2 @@
+#stickers
+for stickers, make drop shadow 1 pixel, angle is 130 degrees

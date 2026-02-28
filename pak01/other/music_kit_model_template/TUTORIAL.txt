@@ -1,0 +1,35 @@
+For the model:
+
+1. Basically what u wanna do is rename/change every reference of "weiland_01" from the template i provided to your music kit artist name of choice, numerically assigned from _01 to _02 if ur adding more etc (u have to edit the .qc file) 
+2. Open up Crowbar.exe, add your CC SDK version of the game to the games list, then just compile music_kit_artistname_01.qc
+3. Put your compiled files into \pak01\models\inventory_items\music_kits
+
+For the textures:
+
+1. You're going to have to make 2 textures for the music kits, mp3_detail.vmt (for the text) and mp3_screen.vmt (for the album cover)
+2. To make mp3_screen.vmt is pretty easy, just export the album cover as a 512x512 image, then put that image into https://tf.heybey.org/vtfconv/
+3. To make the text (mp3_detail.vmt) you will have to install the font "amiga4ever pro2.ttf", its not the same exact font but its close enough
+4. Then, if you have photoshop, open up "create textures\mp3_detail.psd" and change the "Weiland" (artist name) and "Colors" (song name) (if it looks like the dots moved over just delete/add new dots to match the original)
+
+For the sounds:
+
+this is a little complicated to cover here, just ask me ig, but basically u will have to time the audio in audacity and add sync points (like for example where a clap/repeat/snare/bass whatever happens) that look something like this:
+
+"syncpoints_1"
+{
+    "0" "4.282000"
+    "1" "7.711000"
+    "2" "11.140000"
+    "3" "14.569000"
+    "4" "17.997000"
+    "5" "20.997000"
+}
+
+to the "\pak01\sound\music\artist_01\game_sounds_music.txt" file and very important is to change the artist name from within the file to whatever you need it to be
+
+For the icon:
+
+1. Go to the "icon" folder, i've provided a template for you to overlay your cover of choice, you will have to warp/skew the image
+
+!!! and if you are going to actually add a music kit, dont forget to add it to game_sounds_manifest.txt file and push it to clients
+and obviously items_game and csgo_english aswell

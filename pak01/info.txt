@@ -1,0 +1,39 @@
+!! ONLY COMPILE THE .vpk FILES IF YOU KNOW THAT THEY ARE READY just to make sure the md5 hashes dont fuck up !!
+also for compilation u need the last version of the .vpk's in the folder aswell
+
+old note: im not sure we can actually host this on github pages if we wanna add stuff to this, it will add files to the .vpks no matter what chunk size u set after u compile them, and it doesnt really like adding additional vpk files when u overwrite/recompile on the existing vpk files
+
+new note: i ended up not making them below 100mbs, when u overwrite/change/add files to the vpks it attempts to be around 110-150mbs per vpk anyways for some stupid reason, and i cant change it
+but i did notice that alot of valves vpks look exactly the same as mine when i put chunk size to 100, and when u add or remove stuff from the vpks it can go up to like 150mbs per pakfile, if u look at csgo's official pak files theres the same pattern there too
+so i believe im using the same exact method as valve uses to build and update them, again i cant set a limit on how big each pakfile is unfortunately
+
+TODO:
+- fix 10 yr anniversary coin
+- fix 10 yr anniversary cupcake texture/lighting/idk wtf is wrong with it
+
+
+# SKINS
+
+\materials\models\weapons\customization\paints\custom\cc            # for custom weapon skins
+\resource\flash\econ                                                # item icons (mostly for everything besides skins basically)
+
+
+# STICKERS
+
+\materials\models\weapons\customization\stickers                    # sticker textures (ingame/inspect)
+\resource\flash\econ\stickers                                       # sticker icons/images (inventory)
+
+
+# MUSIC KITS (check music_kit_model_template/TUTORIAL.txt if u wanna add your own custom one)
+
+\materials\models\inventory_items\music_kit                         # music kit textures (for inspect only)
+\resource\flash\econ\music_kits                                     # music kit icons (inventory, mvp screen, scoreboard etc)
+\models\inventory_items\music_kits                                  # music kit models
+\sound\music                                                        # music kit music
+
+
+# PINS
+
+\materials\models\inventory_items                                   # pin textures
+\resource\flash\econ\status_icons                                   # pin icons
+\models\inventory_items                                             # pin models
